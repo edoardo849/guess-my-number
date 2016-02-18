@@ -13,10 +13,10 @@ import {MockBackend} from 'angular2/http/testing';
 
 
 // Load the implementations that should be tested
-import {Home} from './home';
+import {GameComponent} from './game.component';
 import {Title} from './services/title';
 
-describe('Home', () => {
+describe('GameComponent', () => {
   // provide our implementations or mocks to the dependency injector
   beforeEachProviders(() => [
     BaseRequestOptions,
@@ -29,18 +29,31 @@ describe('Home', () => {
     }),
 
     Title,
-    Home
+    GameComponent
   ]);
 
-  it('should have default data', inject([ Home ], (home) => {
-    expect(home.data).toEqual({ value: '' });
+  it('should have default range', inject([ GameComponent ], (home) => {
+    expect(home.range[0]).toEqual(1);
+    expect(home.range[1]).toEqual(42);
   }));
 
-  it('should have a title', inject([ Home ], (home) => {
+  it('should have default attempts', inject([ GameComponent ], (home) => {
+    expect(home.MAX_ATTEMPTS).toEqual(3);
+  }));
+
+  it('should have empty answers', inject([ GameComponent ], (home) => {
+    expect(home.answers).toEqual([]);
+  }));
+
+  it('should have the for activated by default', inject([ GameComponent ], (home) => {
+    expect(home.formActive).toEqual(true);
+  }));
+
+  it('should have a title', inject([ GameComponent ], (home) => {
     expect(!!home.title).toEqual(true);
   }));
 
-  it('should log ngOnInit', inject([ Home ], (home) => {
+  it('should log ngOnInit', inject([ GameComponent ], (home) => {
     spyOn(console, 'log');
     expect(console.log).not.toHaveBeenCalled();
 

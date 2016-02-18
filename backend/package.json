@@ -1,0 +1,27 @@
+{
+  "name": "guess-my-number-server",
+  "version": "1.0.0",
+  "description": "An In memory server for the dipinto apserver for guess my number",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dipinto",
+    "game",
+    "memory"
+  ],
+  "author": "Edoardo Paolo Scalafiotti <edoardo849@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.6.5",
+    "compression": "^1.0.11",
+    "cors": "^2.4.1",
+    "dotenv": "^0.4.0",
+    "errorhandler": "^1.1.1",
+    "express": "^4.8.5",
+    "lodash": "^2.4.1",
+    "mongoose": "^4.4.4",
+    "morgan": "^1.2.3"
+  }
+}

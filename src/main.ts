@@ -18,14 +18,14 @@ if ('production' === process.env.ENV) {
  * App Component
  * our top level component that holds all of our components
  */
-import {App} from './app/app';
+import {AppComponent} from './app/app.component';
 
 /*
  * Bootstrap our Angular app with a top level component `App` and inject
  * our Services and Providers into Angular's dependency injection
  */
 document.addEventListener('DOMContentLoaded', function main() {
-  bootstrap(App, [
+  bootstrap(AppComponent, [
     ...ENV_PROVIDERS,
     ...HTTP_PROVIDERS,
     ...ROUTER_PROVIDERS,

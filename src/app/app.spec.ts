@@ -7,16 +7,16 @@ import {
 } from 'angular2/testing';
 
 // Load the implementations that should be tested
-import {App} from './app';
+import {AppComponent} from './app.component';
 
-describe('App', () => {
+describe('AppComponent', () => {
   // provide our implementations or mocks to the dependency injector
   beforeEachProviders(() => [
-    App
+    AppComponent
   ]);
 
-  it('should have a url', inject([ App ], (app) => {
-    expect(app.url).toEqual('https://twitter.com/AngularClass');
+  it('should have a url', inject([ AppComponent ], (app) => {
+    expect(app.url).toEqual('https://twitter.com/edoardo849');
   }));
 
 });

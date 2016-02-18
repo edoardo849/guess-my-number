@@ -1,11 +1,12 @@
 {
-  "name": "angular2-webpack-starter",
-  "version": "3.0.0",
+  "name": "guess-my-number",
+  "version": "1.0.0",
   "description": "An Angular 2 Webpack Starter kit featuring Angular 2 (Router, Http, Forms, Services, Tests, E2E, Coverage), Karma, Protractor, Jasmine, Istanbul, TypeScript, and Webpack by AngularClass",
-  "author": "Patrick Stapleton <patrick@angularclass.com>",
-  "homepage": "https://github.com/angularclass/angular2-webpack-starter",
+  "author": "Edoardo Paolo Scalafiotti <edoardo849@gmail.com>",
+  "homepage": "https://github.com/edoardo849",
   "license": "MIT",
   "scripts": {
+    "backend": "cd backend && npm i && node server.js",
     "clean": "npm cache clean && rimraf node_modules doc typings coverage dist",
     "clean:dist": "rimraf dist",
     "preclean:install": "npm run clean",
@@ -93,13 +94,7 @@
     "webpack-load-plugins": "^0.1.2",
     "webpack-md5-hash": "^0.0.4"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/angularclass/angular2-webpack-starter.git"
-  },
-  "bugs": {
-    "url": "https://github.com/angularclass/angular2-webpack-starter/issues"
-  },
+
   "engines": {
     "node": ">= 4.2.1 <= 5",
     "npm": ">= 3"

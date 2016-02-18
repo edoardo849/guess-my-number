@@ -10,7 +10,7 @@ describe('App', () => {
 
   it('should have a title', () => {
     let subject = browser.getTitle();
-    let result  = 'Angular2 Webpack Starter by @gdi2990 from @AngularClass';
+    let result  = 'Guess my number, by @edoardo849';
     expect(subject).toEqual(result);
   });
 
@@ -28,7 +28,7 @@ describe('App', () => {
 
   it('should have <footer>', () => {
     let subject = element(by.css('app footer')).getText();
-    let result  = 'WebPack Angular 2 Starter by @AngularClass';
+    let result  = 'Guess My Number by @edoardo849';
     expect(subject).toEqual(result);
   });
 
