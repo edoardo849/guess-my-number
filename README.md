@@ -13,3 +13,36 @@ Exercise description:
 
 ## Deliverables:
 All application files plus the database dump in a zip file.
+
+# Installation
+
+## Dependencies
+- `node` and `npm`
+-  Ensure you're running the latest versions Node `v4.1.x+` and NPM `2.14.x+`
+- `mongodb` installed on localhost listening to port `27017`
+
+Once you have those, you should install these globals with npm install --global:
+
+- `webpack (npm install --global webpack)`
+- `webpack-dev-server (npm install --global webpack-dev-server)`
+- `karma (npm install --global karma-cli)`
+- `protractor (npm install --global protractor)`
+- `typings (npm install --global typings)`
+- `typescript (npm install --global typescript)`
+
+Clone the repository
+```bash
+git clone
+
+# Enter in the repository
+cd guess-my-number
+
+# install the repo with npm
+npm install
+
+# start the server
+npm start
+
+# In another Terminal Tab start the backend
+npm run backend
+```
