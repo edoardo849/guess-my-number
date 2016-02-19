@@ -45,4 +45,7 @@ npm start
 
 # In another Terminal Tab start the backend
 npm run backend
+
+# Run tests
+npm run test
 ```
