@@ -32,7 +32,7 @@ Once you have those, you should install these globals with npm install --global:
 
 Clone the repository
 ```bash
-git clone
+git clone git@github.com:edoardo849/guess-my-number.git
 
 # Enter in the repository
 cd guess-my-number
@@ -43,7 +43,11 @@ npm install
 # start the server
 npm start
 
-# In another Terminal Tab start the backend
+# In another Terminal Tab install the backend dependencies
+cd backend && npm install
+cd ..
+
+# Start the backend
 npm run backend
 
 # Run tests
